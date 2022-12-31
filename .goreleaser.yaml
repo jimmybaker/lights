@@ -7,6 +7,19 @@ before:
     - go mod tidy
     # you may remove this if you don't need go generate
     - go generate ./...
+brews:
+  - 
+    name: lights
+    tap:
+      owner: jimmybaker
+      name: homebrew-lights
+      branch: main
+    # - github:
+    #       owner: jimmybaker
+    #       name: homebrew-lights
+    #   folder: Formula
+    #   homepage: https://github.com/jimmybaker/homebrew-lights
+    #   description: CLI tool for controlling Hue lights
 builds:
   - env:
       - CGO_ENABLED=0
