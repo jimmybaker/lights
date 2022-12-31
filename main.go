@@ -22,7 +22,7 @@ func main() {
 			},
 			{
 				Name:  "on",
-				Usage: "turn off lights",
+				Usage: "turn on lights",
 				Action: func(cCtx *cli.Context) error {
 					nameOfLamp := strings.Join(cCtx.Args().Slice(), " ")
 					Toggle(nameOfLamp, true)
